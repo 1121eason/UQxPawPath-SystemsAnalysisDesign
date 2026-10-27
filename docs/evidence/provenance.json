@@ -1,0 +1,166 @@
+{
+  "publication_date_local": "2026-10-28",
+  "timezone": "Australia/Brisbane",
+  "source_manifest_entries_checked": 34,
+  "source_manifest_all_match": true,
+  "native_model_sha256": "c1b168b4f2c3601d5f3b41263e480305b543a1da9f4735d330b93ad00d432310",
+  "native_validation_not_rerun_during_publication": true,
+  "assets": [
+    {
+      "public_path": "assets/diagrams/AD1_full.png",
+      "source_path": "diagrams/AD1_full.png",
+      "sha256": "053f6d446e2572277ef4a91e98f60b37b9bee06cafc3e452b0a8dcb6291f433f",
+      "treatment": "byte-identical supplied PNG"
+    },
+    {
+      "public_path": "assets/diagrams/AD1_part1.png",
+      "source_path": "diagrams/AD1_part1.png",
+      "sha256": "cf125e162722559b2e1355351b2510e8989bce5250a9af596b6955d8d9dd2db4",
+      "treatment": "byte-identical supplied PNG"
+    },
+    {
+      "public_path": "assets/diagrams/AD1_part2.png",
+      "source_path": "diagrams/AD1_part2.png",
+      "sha256": "6c564ae7f5b3fb23d8802902e833a33731125be66cb011fd609028d57344db96",
+      "treatment": "byte-identical supplied PNG"
+    },
+    {
+      "public_path": "assets/diagrams/AD2_full.png",
+      "source_path": "diagrams/AD2_full.png",
+      "sha256": "09f04ff764a7607f1c836f833a3828bed5d53f5e31e516eb8b284db04098e0e7",
+      "treatment": "byte-identical supplied PNG"
+    },
+    {
+      "public_path": "assets/diagrams/AD2_part1.png",
+      "source_path": "diagrams/AD2_part1.png",
+      "sha256": "462e338bec743d0a983c0907e5392409b450164ae734b29b4b5e3536565af606",
+      "treatment": "byte-identical supplied PNG"
+    },
+    {
+      "public_path": "assets/diagrams/AD2_part2.png",
+      "source_path": "diagrams/AD2_part2.png",
+      "sha256": "f31d7f2b497ea49a66d265cc5407ebec51bab8420afe456f92598f5e9982cdaa",
+      "treatment": "byte-identical supplied PNG"
+    },
+    {
+      "public_path": "assets/diagrams/CL_full.png",
+      "source_path": "diagrams/CL_full.png",
+      "sha256": "259c1f263556b9ad8a92b7e8823680f32067023faf6a21e78f4a4a88b9b686d9",
+      "treatment": "byte-identical supplied PNG"
+    },
+    {
+      "public_path": "assets/diagrams/CL_part1.png",
+      "source_path": "diagrams/CL_part1.png",
+      "sha256": "cf43502ab80c369565f54ff2728eecc7ee1f4c75f96bdb7e0c21e2e875f1dd35",
+      "treatment": "byte-identical supplied PNG"
+    },
+    {
+      "public_path": "assets/diagrams/CL_part2.png",
+      "source_path": "diagrams/CL_part2.png",
+      "sha256": "97100d5f9df5e5aa8919bc180d60656109aca118aec066e28248e8bdbce289a6",
+      "treatment": "byte-identical supplied PNG"
+    },
+    {
+      "public_path": "assets/diagrams/SD1_full.png",
+      "source_path": "diagrams/SD1_full.png",
+      "sha256": "bd015c389c5435c2a18eead150fd12c11967dedbb934ba2773fb7cc45b64d111",
+      "treatment": "byte-identical supplied PNG"
+    },
+    {
+      "public_path": "assets/diagrams/SD1_part1.png",
+      "source_path": "diagrams/SD1_part1.png",
+      "sha256": "2080e220d45a6500f766e54a02bc8e9670ba2b473837aab606408d99b5379390",
+      "treatment": "byte-identical supplied PNG"
+    },
+    {
+      "public_path": "assets/diagrams/SD1_part2.png",
+      "source_path": "diagrams/SD1_part2.png",
+      "sha256": "b8aa787f6f86c2b05d97103fd3928575d10e02a8e80b0aea2458a5ffab95a5c7",
+      "treatment": "byte-identical supplied PNG"
+    },
+    {
+      "public_path": "assets/diagrams/SD1_part3.png",
+      "source_path": "diagrams/SD1_part3.png",
+      "sha256": "5b284f8b8976a0258cf28066068b44c5b2473a4bd780e09a10ece134d47700ee",
+      "treatment": "byte-identical supplied PNG"
+    },
+    {
+      "public_path": "assets/diagrams/SD2_full.png",
+      "source_path": "diagrams/SD2_full.png",
+      "sha256": "b0037e11baa00b59ea0b995ec663690ab0f13db95b137149e180aa2c633ecfe6",
+      "treatment": "byte-identical supplied PNG"
+    },
+    {
+      "public_path": "assets/diagrams/SD2_part1.png",
+      "source_path": "diagrams/SD2_part1.png",
+      "sha256": "3a8c93ee6fcaf89b1f7410bb796e04ccd974691d6e8d5951cf1b46381c0c5de7",
+      "treatment": "byte-identical supplied PNG"
+    },
+    {
+      "public_path": "assets/diagrams/SD2_part2.png",
+      "source_path": "diagrams/SD2_part2.png",
+      "sha256": "8fe2614d4a4431dc7e8950ea1ebf2a55494682576b7abd1c19608ed7ab42b670",
+      "treatment": "byte-identical supplied PNG"
+    },
+    {
+      "public_path": "assets/diagrams/SD2_part3.png",
+      "source_path": "diagrams/SD2_part3.png",
+      "sha256": "100d9c389e228c2d7916cb08321c36df1da6beff475823ba362c0a751cfc18ae",
+      "treatment": "byte-identical supplied PNG"
+    },
+    {
+      "public_path": "assets/diagrams/SM_full.png",
+      "source_path": "diagrams/SM_full.png",
+      "sha256": "1e45c9b789fe4e8bf6eb5140452382cb92ad27b3da98398a8de186bb914e79d0",
+      "treatment": "byte-identical supplied PNG"
+    },
+    {
+      "public_path": "assets/diagrams/UC_full.png",
+      "source_path": "diagrams/UC_full.png",
+      "sha256": "cafe0f95cd8cb441e2836d947554f14cfd466262c4288cf02452d83114f52374",
+      "treatment": "byte-identical supplied PNG"
+    },
+    {
+      "public_path": "docs/evidence/screenshots/EA_Report_Only_No_Problems.png",
+      "source_path": "validation/EA_Report_Only_No_Problems.png",
+      "sha256": "ddbe64fc1730ecad649d3abdac56c0d7b0ae84cbe00aefbbf09bd89184f5ebeb",
+      "treatment": "byte-identical supplied PNG"
+    },
+    {
+      "public_path": "docs/evidence/screenshots/EA_UML_Enabled_Rules.png",
+      "source_path": "validation/EA_UML_Enabled_Rules.png",
+      "sha256": "1a9b1fabdabed018ac4c65265809faa111e98a25557a7faa1fda748ed6226e14",
+      "treatment": "byte-identical supplied PNG"
+    },
+    {
+      "public_path": "docs/evidence/screenshots/EA_UML_Validation_Complete.png",
+      "source_path": "validation/EA_UML_Validation_Complete.png",
+      "sha256": "0db1f41eb3116e39a3ea75bcbd473d19fe5edd446e9dd0bd4ebdd7338b428feb",
+      "treatment": "byte-identical supplied PNG"
+    },
+    {
+      "public_path": "docs/evidence/supplied-verification.json",
+      "source_path": "Verification.json",
+      "sha256": "120c0253c29febdf2c16bd023a9c743f459f6d5b1603aeac1e43091c0950ec99",
+      "treatment": "byte-identical supplied record; historical evidence"
+    },
+    {
+      "public_path": "docs/evidence/native-export-log.txt",
+      "source_path": "EA_native_export_log.txt",
+      "sha256": "8668b175df3639385dbfe2d4b2b3d296703bcf132dee95ddc744b6dda0420052",
+      "treatment": "byte-identical supplied record; historical evidence"
+    },
+    {
+      "public_path": "docs/evidence/validation-copy-hashes.json",
+      "source_path": "validation/Validation_Copy_SHA256.json",
+      "sha256": "84aff441cdb32e2639c3348dc9f7a5f46392ec98aee6855aebc906d1a7bf425a",
+      "treatment": "byte-identical supplied record; historical evidence"
+    },
+    {
+      "public_path": "docs/evidence/uml-validation-result.txt",
+      "source_path": "validation/EA_UML_Validation.txt",
+      "sha256": "788bccbfbdf5f801780afdfdef915699aa1af19b66a0287d0746088c21b2b378",
+      "treatment": "byte-identical supplied record; historical evidence"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="350" viewBox="0 0 1160 350" role="img" aria-labelledby="title desc">
+<title id="title">PawPath: from business rules to a controlled animal lifecycle</title><desc id="desc">Intake leads to assessments, public listing, adoption finalisation and physical release. Listing requires eligibility. Adoption requires agreement and payment. Release requires the latest health check.</desc>
+<rect width="1160" height="350" rx="18" fill="#102b39"/>
+<g font-family="Arial, sans-serif"><text x="36" y="48" fill="#7ee2c1" font-size="16" letter-spacing="2">BUSINESS INFORMATION SYSTEMS ANALYSIS &amp; DESIGN</text>
+<text x="36" y="91" fill="white" font-size="31" font-weight="700">Make each business decision explicit.</text>
+<text x="36" y="123" fill="#c1d4df" font-size="17">14 user stories · 84 acceptance criteria · 7 UML diagrams · Enterprise Architect</text>
+<g fill="#204758" stroke="#598193"><rect x="36" y="161" width="192" height="91" rx="9"/><rect x="260" y="161" width="192" height="91" rx="9"/><rect x="484" y="161" width="192" height="91" rx="9"/><rect x="708" y="161" width="192" height="91" rx="9"/><rect x="932" y="161" width="192" height="91" rx="9"/></g>
+<g fill="white" font-size="19" font-weight="700"><text x="54" y="194">Intake</text><text x="278" y="194">Assess</text><text x="502" y="194">List</text><text x="726" y="194">Adopt</text><text x="950" y="194">Release</text></g>
+<g fill="#c1d4df" font-size="15"><text x="54" y="224">Identity + records</text><text x="278" y="224">Three parallel checks</text><text x="502" y="224">Eligibility + clearance</text><text x="726" y="224">Agreement + payment</text><text x="950" y="224">Latest check passed</text></g>
+<g stroke="#7ee2c1" stroke-width="2" fill="none"><path d="M234 207h18m-6-5 6 5-6 5M458 207h18m-6-5 6 5-6 5M682 207h18m-6-5 6 5-6 5M906 207h18m-6-5 6 5-6 5"/></g>
+<text x="36" y="294" fill="#7ee2c1" font-size="17" font-weight="700">Design focus</text><text x="160" y="294" fill="white" font-size="17">Ownership holds · Treatment and rechecks · Failure recovery · Safe handover</text>
+<text x="36" y="325" fill="#9eb6c4" font-size="14">Academic design case. Quality targets and intended benefits require future implementation and validation.</text></g></svg>

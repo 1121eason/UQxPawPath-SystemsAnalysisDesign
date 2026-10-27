@@ -1,0 +1,85 @@
+story_id,story_title,criterion_id,criterion,evidence_status
+FUS1,Create Animal Intake Record,FUS1.AC1,"Require species, approximate age, sex, coat markings, arrival circumstances and intake timestamp before completing intake.",specified_not_runtime_tested
+FUS1,Create Animal Intake Record,FUS1.AC2,"Capture arrival source and surrenderer contact details or transferring officer name, council and contact details, as applicable.",specified_not_runtime_tested
+FUS1,Create Animal Intake Record,FUS1.AC3,"For council transfers, require paperwork attachments or an explicit not applicable reason before assessments are enabled.",specified_not_runtime_tested
+FUS1,Create Animal Intake Record,FUS1.AC4,Generate a unique shelterId; reject duplicate identifiers without creating another animal record.,specified_not_runtime_tested
+FUS1,Create Animal Intake Record,FUS1.AC5,Require at least one identification photograph linked to the intake record before completion.,specified_not_runtime_tested
+FUS1,Create Animal Intake Record,FUS1.AC6,"Completed intake sets Under Assessment and enables independent health, ownership and behaviour assessments.",specified_not_runtime_tested
+FUS2,Assess Animal Health and Manage Treatment,FUS2.AC1,"Save animal reference, examinedAt, veterinarian, body condition, dental health, coat and skin condition, and injury findings.",specified_not_runtime_tested
+FUS2,Assess Animal Health and Manage Treatment,FUS2.AC2,"Record species-specific screening results; document blood or faecal samples as collected, pending, negative, positive or not required.",specified_not_runtime_tested
+FUS2,Assess Animal Health and Manage Treatment,FUS2.AC3,"Require urgentTreatmentRequired Boolean; true means the veterinarian judges delay risks immediate deterioration, with urgentTreatmentReason recorded.",specified_not_runtime_tested
+FUS2,Assess Animal Health and Manage Treatment,FUS2.AC4,Urgent cases require treatmentPlan and immediate-care recording; unresolved treatment blocks clearance and public listing.,specified_not_runtime_tested
+FUS2,Assess Animal Health and Manage Treatment,FUS2.AC5,"Record dated treatment, monitoring, treatmentOutcome and reassessment findings in the same MedicalRecord linked to the animal.",specified_not_runtime_tested
+FUS2,Assess Animal Health and Manage Treatment,FUS2.AC6,Only a veterinarian can clear the urgent flag after reassessment; recovery returns the animal to combined fitness review.,specified_not_runtime_tested
+FUS3,Determine Ownership and Behavioural Suitability,FUS3.AC1,Record microchip detection; require microchipNumber when detected and retain the registry lookup outcome.,specified_not_runtime_tested
+FUS3,Determine Ownership and Behavioural Suitability,FUS3.AC2,"For identified owners, store contact attempts, holdJurisdiction and holdUntil using the applicable statutory period.",specified_not_runtime_tested
+FUS3,Determine Ownership and Behavioural Suitability,FUS3.AC3,"Before holdUntil, block clearance; verified reclamation records return to owner and closes the intake without listing.",specified_not_runtime_tested
+FUS3,Determine Ownership and Behavioural Suitability,FUS3.AC4,"Record responses to handling, animals, food and unfamiliar people, with assessor, assessment date and suitabilityResult.",specified_not_runtime_tested
+FUS3,Determine Ownership and Behavioural Suitability,FUS3.AC5,An unsuitable result requires behaviour referral and reassessment; permanent unsuitability closes the public-adoption pathway.,specified_not_runtime_tested
+FUS3,Determine Ownership and Behavioural Suitability,FUS3.AC6,"Combined fitness review requires three completed assessments; listing additionally requires ownership clear, suitable behaviour and medical fitness.",specified_not_runtime_tested
+FUS4,Prepare Animal for Public Adoption,FUS4.AC1,"Record species-appropriate vaccination type, administration date and boosterDueDate; reject missing or chronologically inconsistent dates.",specified_not_runtime_tested
+FUS4,Prepare Animal for Public Adoption,FUS4.AC2,Record desexingStatus as completed or scheduled; a scheduled procedure requires a date and identified shelter policy permitting listing.,specified_not_runtime_tested
+FUS4,Prepare Animal for Public Adoption,FUS4.AC3,Vaccination and desexing preparation proceed independently; both must satisfy policy before medical clearance.,specified_not_runtime_tested
+FUS4,Prepare Animal for Public Adoption,FUS4.AC4,"Clearance records veterinarian and sign-off time; unresolved treatment, ownership hold or unsuitable temperament blocks authorisation.",specified_not_runtime_tested
+FUS4,Prepare Animal for Public Adoption,FUS4.AC5,Only cleared animals can change from Under Assessment to Available for Adoption; failed transitions retain the previous status.,specified_not_runtime_tested
+FUS4,Prepare Animal for Public Adoption,FUS4.AC6,"Publish approved photographs, temperament notes and medical summary only; owner, applicant and raw clinical records remain private.",specified_not_runtime_tested
+FUS5,Assess Adoption Application,FUS5.AC1,"Require selected available animal, applicant contact, household, referee and adoption-reason details; missing fields prevent completed submission.",specified_not_runtime_tested
+FUS5,Assess Adoption Application,FUS5.AC2,Assign applicationId and preserve submissions; incomplete applications return for correction before suitability review.,specified_not_runtime_tested
+FUS5,Assess Adoption Application,FUS5.AC3,"Record referenceCheckResult, contacted referee, date and supporting evidence; pending results cannot support approval.",specified_not_runtime_tested
+FUS5,Assess Adoption Application,FUS5.AC4,"Record homeSuitabilityResult, tenure, yard security and landlord permission; not applicable decisions require a reason.",specified_not_runtime_tested
+FUS5,Assess Adoption Application,FUS5.AC5,Record petCompatibilityResult and species or temperament evidence; no existing pets is recorded explicitly with justification.,specified_not_runtime_tested
+FUS5,Assess Adoption Application,FUS5.AC6,"All three satisfactory results permit progression; any unsatisfactory result requires rejection reason, applicant notification and available status restoration.",specified_not_runtime_tested
+FUS6,Finalise Adoption Placement,FUS6.AC1,"Schedule a meet-and-greet only after approval; store application reference, meetingAt and supervising staff.",specified_not_runtime_tested
+FUS6,Finalise Adoption Placement,FUS6.AC2,Record compatible or incompatible outcome with observations; an unrecorded outcome blocks finalisation.,specified_not_runtime_tested
+FUS6,Finalise Adoption Placement,FUS6.AC3,"Incompatibility closes that application, records notification and restores the animal to Available for Adoption.",specified_not_runtime_tested
+FUS6,Finalise Adoption Placement,FUS6.AC4,"Compatibility enables signed agreement and payment confirmation in parallel, linked to the same application.",specified_not_runtime_tested
+FUS6,Finalise Adoption Placement,FUS6.AC5,"Require signature reference and successful payment reference; missing, failed or pending payment blocks finalisation.",specified_not_runtime_tested
+FUS6,Finalise Adoption Placement,FUS6.AC6,Finalisation creates one AdoptionRecord and sets Adopted before the final medical check; duplicate requests cannot create duplicate placements.,specified_not_runtime_tested
+FUS7,Complete Final Medical Release and Follow-Up,FUS7.AC1,"Record the final examination date, veterinarian and latestMedicalCheckPassed against the adopted animal.",specified_not_runtime_tested
+FUS7,Complete Final Medical Release and Follow-Up,FUS7.AC2,"Record applicable care instructions, medication schedule and dietary advice; identify not applicable items explicitly.",specified_not_runtime_tested
+FUS7,Complete Final Medical Release and Follow-Up,FUS7.AC3,A failed check sets Release Paused; treatment and a new examination are required before release can resume.,specified_not_runtime_tested
+FUS7,Complete Final Medical Release and Follow-Up,FUS7.AC4,"Release remains blocked until the latest check passes, regardless of an earlier clearance or successful payment.",specified_not_runtime_tested
+FUS7,Complete Final Medical Release and Follow-Up,FUS7.AC5,Staff confirm recipient and releasedAt only for a valid adoption with a passed current check.,specified_not_runtime_tested
+FUS7,Complete Final Medical Release and Follow-Up,FUS7.AC6,"After release, require followUpMethod and followUpDueAt within the agreement period; retain completion outcome when follow-up occurs.",specified_not_runtime_tested
+NFUS1,Protect Role-Based Access,NFUS1.AC1,Each staff account has a unique identifier; passwords use salted one-way hashing and never appear in logs.,specified_not_runtime_tested
+NFUS1,Protect Role-Based Access,NFUS1.AC2,Staff manage intake and placement; veterinarians authorise clinical outcomes; applicants access only their own applications.,specified_not_runtime_tested
+NFUS1,Protect Role-Based Access,NFUS1.AC3,"Direct unauthorised requests return no protected data and log actor, action, timestamp and denial outcome.",specified_not_runtime_tested
+NFUS1,Protect Role-Based Access,NFUS1.AC4,Five failed logins in 15 minutes lock the account for 15 minutes or until authorised administrator unlock.,specified_not_runtime_tested
+NFUS1,Protect Role-Based Access,NFUS1.AC5,Internal sessions expire after 15 inactive minutes; the next protected request requires authentication.,specified_not_runtime_tested
+NFUS1,Protect Role-Based Access,NFUS1.AC6,"Permission changes take effect within five minutes, including existing sessions, and record administrator and timestamp.",specified_not_runtime_tested
+NFUS2,Preserve Personal and Sensitive Data Privacy,NFUS2.AC1,Use TLS 1.2 or later in transit and encrypted databases and backups; reject unencrypted protected-data requests.,specified_not_runtime_tested
+NFUS2,Preserve Personal and Sensitive Data Privacy,NFUS2.AC2,"Public responses and exports exclude owner contacts, microchip numbers, applications, payment details and raw medical notes.",specified_not_runtime_tested
+NFUS2,Preserve Personal and Sensitive Data Privacy,NFUS2.AC3,"Before application submission, display collection purpose and record privacy-notice version, acknowledgement and timestamp.",specified_not_runtime_tested
+NFUS2,Preserve Personal and Sensitive Data Privacy,NFUS2.AC4,Veterinarians access release contacts and care needs; household and referee evidence remains staff-restricted.,specified_not_runtime_tested
+NFUS2,Preserve Personal and Sensitive Data Privacy,NFUS2.AC5,Store payment reference and outcome only; never store card verification codes or full payment-card numbers.,specified_not_runtime_tested
+NFUS2,Preserve Personal and Sensitive Data Privacy,NFUS2.AC6,"Apply a management-approved retention schedule; delete or irreversibly de-identify expired personal data within 30 days, logging completion.",specified_not_runtime_tested
+NFUS3,Maintain Responsive Performance,NFUS3.AC1,Animal-search response time is at most two seconds at the 95th percentile with 50 active internal users.,specified_not_runtime_tested
+NFUS3,Maintain Responsive Performance,NFUS3.AC2,Public listings become usable within three seconds at the 95th percentile with 100 concurrent visitors.,specified_not_runtime_tested
+NFUS3,Maintain Responsive Performance,NFUS3.AC3,"Valid intake, assessment and status updates confirm within two seconds at the 95th percentile.",specified_not_runtime_tested
+NFUS3,Maintain Responsive Performance,NFUS3.AC4,A valid 10 MB photograph uploads and confirms within five seconds at the 95th percentile.,specified_not_runtime_tested
+NFUS3,Maintain Responsive Performance,NFUS3.AC5,Valid application submission confirms within three seconds; retrying the same request returns the same applicationId.,specified_not_runtime_tested
+NFUS3,Maintain Responsive Performance,NFUS3.AC6,"A 30-minute mixed-load test uses 50 internal users, 100 visitors and 10,000 animals; server errors remain below 1%.",specified_not_runtime_tested
+NFUS4,Sustain Availability and Recoverability,NFUS4.AC1,"Achieve 99.5% monthly availability, measured by successful one-minute probes, excluding approved announced maintenance.",specified_not_runtime_tested
+NFUS4,Sustain Availability and Recoverability,NFUS4.AC2,Announce maintenance 48 hours ahead; schedule outside the proposed 08:00 to 18:00 shelter operating window.,specified_not_runtime_tested
+NFUS4,Sustain Availability and Recoverability,NFUS4.AC3,Three consecutive failed probes trigger an alert to support within five minutes of the first failure.,specified_not_runtime_tested
+NFUS4,Sustain Availability and Recoverability,NFUS4.AC4,Back up critical records every 15 minutes and take encrypted daily backups stored separately from production.,specified_not_runtime_tested
+NFUS4,Sustain Availability and Recoverability,NFUS4.AC5,Recovery loses at most 15 minutes of committed data and restores critical service within four hours.,specified_not_runtime_tested
+NFUS4,Sustain Availability and Recoverability,NFUS4.AC6,"Quarterly restoration verifies identifiers, relationships and latest committed values across animal, medical, application, agreement and placement records.",specified_not_runtime_tested
+NFUS5,Support Usable and Error-Resistant Work,NFUS5.AC1,"After 60 minutes of training, each participant completes intake within five minutes without critical error.",specified_not_runtime_tested
+NFUS5,Support Usable and Error-Resistant Work,NFUS5.AC2,"Required fields are identified before submission; validation identifies the field, problem and corrective action.",specified_not_runtime_tested
+NFUS5,Support Usable and Error-Resistant Work,NFUS5.AC3,Validation failures preserve all valid entries and attachments; users correct errors without re-entering unaffected information.,specified_not_runtime_tested
+NFUS5,Support Usable and Error-Resistant Work,NFUS5.AC4,"Rejection, adoption finalisation and release require a confirmation showing animal, application, previous status and proposed outcome.",specified_not_runtime_tested
+NFUS5,Support Usable and Error-Resistant Work,NFUS5.AC5,"Status labels match the domain model across forms, searches, dashboards and exports.",specified_not_runtime_tested
+NFUS5,Support Usable and Error-Resistant Work,NFUS5.AC6,"Five representative staff perform four core tasks each; at least 18 of 20 succeed unaided, with zero unsafe releases.",specified_not_runtime_tested
+NFUS6,Preserve Record Integrity and Auditability,NFUS6.AC1,Intake and adoption finalisation commit all required related records atomically; injected failure leaves no partial transaction.,specified_not_runtime_tested
+NFUS6,Preserve Record Integrity and Auditability,NFUS6.AC2,Unique constraints reject duplicate shelterId and applicationId; repeated finalisation returns the existing adoption record.,specified_not_runtime_tested
+NFUS6,Preserve Record Integrity and Auditability,NFUS6.AC3,Updates include record version; stale submissions are rejected with a conflict message and retain unsaved user changes.,specified_not_runtime_tested
+NFUS6,Preserve Record Integrity and Auditability,NFUS6.AC4,"Critical changes log actor, UTC timestamp, record identifier, action and before-and-after values.",specified_not_runtime_tested
+NFUS6,Preserve Record Integrity and Auditability,NFUS6.AC5,Ordinary users cannot change or delete audit entries; retention follows the approved audit schedule.,specified_not_runtime_tested
+NFUS6,Preserve Record Integrity and Auditability,NFUS6.AC6,"Daily checks report orphan records, invalid status transitions and released animals without passed checks within one hour; affected finalisation is blocked.",specified_not_runtime_tested
+NFUS7,Provide Accessible Public Services,NFUS7.AC1,"All public browse-and-apply pages satisfy WCAG 2.2 Level AA, checked manually and with automated tools (W3C, 2024).",specified_not_runtime_tested
+NFUS7,Provide Accessible Public Services,NFUS7.AC2,"Every interaction works by keyboard, with logical focus order, visible unobscured focus and no keyboard trap.",specified_not_runtime_tested
+NFUS7,Provide Accessible Public Services,NFUS7.AC3,"Controls expose accessible names; screen readers announce required fields, validation errors and submission outcomes.",specified_not_runtime_tested
+NFUS7,Provide Accessible Public Services,NFUS7.AC4,Meaningful animal photographs have descriptive alternative text; decorative images are ignored by assistive technology.,specified_not_runtime_tested
+NFUS7,Provide Accessible Public Services,NFUS7.AC5,"Text contrast meets 4.5:1, or 3:1 for large text; 200% zoom preserves all content and functions.",specified_not_runtime_tested
+NFUS7,Provide Accessible Public Services,NFUS7.AC6,"Test current and previous Chrome, Edge and Safari releases, plus NVDA with Chrome and VoiceOver with Safari.",specified_not_runtime_tested

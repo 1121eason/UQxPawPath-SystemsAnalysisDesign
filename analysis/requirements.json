@@ -1,0 +1,454 @@
+{
+  "source": "Supplied revised report, sections 1 and 2; paragraph text preserved.",
+  "status": "Design specification; acceptance criteria have not been runtime-tested.",
+  "stories": [
+    {
+      "id": "FUS1",
+      "title": "Create Animal Intake Record",
+      "story": "AS A Shelter Staff Member, I WANT to record complete intake information, SO THAT I identify each animal throughout shelter care.",
+      "criteria": [
+        {
+          "id": "FUS1.AC1",
+          "text": "Require species, approximate age, sex, coat markings, arrival circumstances and intake timestamp before completing intake."
+        },
+        {
+          "id": "FUS1.AC2",
+          "text": "Capture arrival source and surrenderer contact details or transferring officer name, council and contact details, as applicable."
+        },
+        {
+          "id": "FUS1.AC3",
+          "text": "For council transfers, require paperwork attachments or an explicit not applicable reason before assessments are enabled."
+        },
+        {
+          "id": "FUS1.AC4",
+          "text": "Generate a unique shelterId; reject duplicate identifiers without creating another animal record."
+        },
+        {
+          "id": "FUS1.AC5",
+          "text": "Require at least one identification photograph linked to the intake record before completion."
+        },
+        {
+          "id": "FUS1.AC6",
+          "text": "Completed intake sets Under Assessment and enables independent health, ownership and behaviour assessments."
+        }
+      ],
+      "source_section": "1"
+    },
+    {
+      "id": "FUS2",
+      "title": "Assess Animal Health and Manage Treatment",
+      "story": "AS A Veterinarian, I WANT to document examination and treatment decisions, SO THAT I establish medical fitness before public adoption.",
+      "criteria": [
+        {
+          "id": "FUS2.AC1",
+          "text": "Save animal reference, examinedAt, veterinarian, body condition, dental health, coat and skin condition, and injury findings."
+        },
+        {
+          "id": "FUS2.AC2",
+          "text": "Record species-specific screening results; document blood or faecal samples as collected, pending, negative, positive or not required."
+        },
+        {
+          "id": "FUS2.AC3",
+          "text": "Require urgentTreatmentRequired Boolean; true means the veterinarian judges delay risks immediate deterioration, with urgentTreatmentReason recorded."
+        },
+        {
+          "id": "FUS2.AC4",
+          "text": "Urgent cases require treatmentPlan and immediate-care recording; unresolved treatment blocks clearance and public listing."
+        },
+        {
+          "id": "FUS2.AC5",
+          "text": "Record dated treatment, monitoring, treatmentOutcome and reassessment findings in the same MedicalRecord linked to the animal."
+        },
+        {
+          "id": "FUS2.AC6",
+          "text": "Only a veterinarian can clear the urgent flag after reassessment; recovery returns the animal to combined fitness review."
+        }
+      ],
+      "source_section": "1"
+    },
+    {
+      "id": "FUS3",
+      "title": "Determine Ownership and Behavioural Suitability",
+      "story": "AS A Shelter Staff Member, I WANT to record ownership and temperament outcomes, SO THAT I prevent unlawful or unsuitable public listing.",
+      "criteria": [
+        {
+          "id": "FUS3.AC1",
+          "text": "Record microchip detection; require microchipNumber when detected and retain the registry lookup outcome."
+        },
+        {
+          "id": "FUS3.AC2",
+          "text": "For identified owners, store contact attempts, holdJurisdiction and holdUntil using the applicable statutory period."
+        },
+        {
+          "id": "FUS3.AC3",
+          "text": "Before holdUntil, block clearance; verified reclamation records return to owner and closes the intake without listing."
+        },
+        {
+          "id": "FUS3.AC4",
+          "text": "Record responses to handling, animals, food and unfamiliar people, with assessor, assessment date and suitabilityResult."
+        },
+        {
+          "id": "FUS3.AC5",
+          "text": "An unsuitable result requires behaviour referral and reassessment; permanent unsuitability closes the public-adoption pathway."
+        },
+        {
+          "id": "FUS3.AC6",
+          "text": "Combined fitness review requires three completed assessments; listing additionally requires ownership clear, suitable behaviour and medical fitness."
+        }
+      ],
+      "source_section": "1"
+    },
+    {
+      "id": "FUS4",
+      "title": "Prepare Animal for Public Adoption",
+      "story": "AS A Veterinarian, I WANT to complete preparation and authorise clearance, SO THAT I make eligible animals available for adoption.",
+      "criteria": [
+        {
+          "id": "FUS4.AC1",
+          "text": "Record species-appropriate vaccination type, administration date and boosterDueDate; reject missing or chronologically inconsistent dates."
+        },
+        {
+          "id": "FUS4.AC2",
+          "text": "Record desexingStatus as completed or scheduled; a scheduled procedure requires a date and identified shelter policy permitting listing."
+        },
+        {
+          "id": "FUS4.AC3",
+          "text": "Vaccination and desexing preparation proceed independently; both must satisfy policy before medical clearance."
+        },
+        {
+          "id": "FUS4.AC4",
+          "text": "Clearance records veterinarian and sign-off time; unresolved treatment, ownership hold or unsuitable temperament blocks authorisation."
+        },
+        {
+          "id": "FUS4.AC5",
+          "text": "Only cleared animals can change from Under Assessment to Available for Adoption; failed transitions retain the previous status."
+        },
+        {
+          "id": "FUS4.AC6",
+          "text": "Publish approved photographs, temperament notes and medical summary only; owner, applicant and raw clinical records remain private."
+        }
+      ],
+      "source_section": "1"
+    },
+    {
+      "id": "FUS5",
+      "title": "Assess Adoption Application",
+      "story": "AS A Shelter Staff Member, I WANT to assess each complete adoption application, SO THAT I select suitable applicants for a meet-and-greet.",
+      "criteria": [
+        {
+          "id": "FUS5.AC1",
+          "text": "Require selected available animal, applicant contact, household, referee and adoption-reason details; missing fields prevent completed submission."
+        },
+        {
+          "id": "FUS5.AC2",
+          "text": "Assign applicationId and preserve submissions; incomplete applications return for correction before suitability review."
+        },
+        {
+          "id": "FUS5.AC3",
+          "text": "Record referenceCheckResult, contacted referee, date and supporting evidence; pending results cannot support approval."
+        },
+        {
+          "id": "FUS5.AC4",
+          "text": "Record homeSuitabilityResult, tenure, yard security and landlord permission; not applicable decisions require a reason."
+        },
+        {
+          "id": "FUS5.AC5",
+          "text": "Record petCompatibilityResult and species or temperament evidence; no existing pets is recorded explicitly with justification."
+        },
+        {
+          "id": "FUS5.AC6",
+          "text": "All three satisfactory results permit progression; any unsatisfactory result requires rejection reason, applicant notification and available status restoration."
+        }
+      ],
+      "source_section": "1"
+    },
+    {
+      "id": "FUS6",
+      "title": "Finalise Adoption Placement",
+      "story": "AS A Shelter Staff Member, I WANT to confirm compatibility and placement prerequisites, SO THAT I finalise a valid adoption.",
+      "criteria": [
+        {
+          "id": "FUS6.AC1",
+          "text": "Schedule a meet-and-greet only after approval; store application reference, meetingAt and supervising staff."
+        },
+        {
+          "id": "FUS6.AC2",
+          "text": "Record compatible or incompatible outcome with observations; an unrecorded outcome blocks finalisation."
+        },
+        {
+          "id": "FUS6.AC3",
+          "text": "Incompatibility closes that application, records notification and restores the animal to Available for Adoption."
+        },
+        {
+          "id": "FUS6.AC4",
+          "text": "Compatibility enables signed agreement and payment confirmation in parallel, linked to the same application."
+        },
+        {
+          "id": "FUS6.AC5",
+          "text": "Require signature reference and successful payment reference; missing, failed or pending payment blocks finalisation."
+        },
+        {
+          "id": "FUS6.AC6",
+          "text": "Finalisation creates one AdoptionRecord and sets Adopted before the final medical check; duplicate requests cannot create duplicate placements."
+        }
+      ],
+      "source_section": "1"
+    },
+    {
+      "id": "FUS7",
+      "title": "Complete Final Medical Release and Follow-Up",
+      "story": "AS A Veterinarian, I WANT to confirm fitness and care requirements before release, SO THAT I support safe placement and follow-up.",
+      "criteria": [
+        {
+          "id": "FUS7.AC1",
+          "text": "Record the final examination date, veterinarian and latestMedicalCheckPassed against the adopted animal."
+        },
+        {
+          "id": "FUS7.AC2",
+          "text": "Record applicable care instructions, medication schedule and dietary advice; identify not applicable items explicitly."
+        },
+        {
+          "id": "FUS7.AC3",
+          "text": "A failed check sets Release Paused; treatment and a new examination are required before release can resume."
+        },
+        {
+          "id": "FUS7.AC4",
+          "text": "Release remains blocked until the latest check passes, regardless of an earlier clearance or successful payment."
+        },
+        {
+          "id": "FUS7.AC5",
+          "text": "Staff confirm recipient and releasedAt only for a valid adoption with a passed current check."
+        },
+        {
+          "id": "FUS7.AC6",
+          "text": "After release, require followUpMethod and followUpDueAt within the agreement period; retain completion outcome when follow-up occurs."
+        }
+      ],
+      "source_section": "1"
+    },
+    {
+      "id": "NFUS1",
+      "title": "Protect Role-Based Access",
+      "story": "AS A Shelter Staff Member, I WANT to use authenticated role permissions, SO THAT I prevent unauthorised changes.",
+      "criteria": [
+        {
+          "id": "NFUS1.AC1",
+          "text": "Each staff account has a unique identifier; passwords use salted one-way hashing and never appear in logs."
+        },
+        {
+          "id": "NFUS1.AC2",
+          "text": "Staff manage intake and placement; veterinarians authorise clinical outcomes; applicants access only their own applications."
+        },
+        {
+          "id": "NFUS1.AC3",
+          "text": "Direct unauthorised requests return no protected data and log actor, action, timestamp and denial outcome."
+        },
+        {
+          "id": "NFUS1.AC4",
+          "text": "Five failed logins in 15 minutes lock the account for 15 minutes or until authorised administrator unlock."
+        },
+        {
+          "id": "NFUS1.AC5",
+          "text": "Internal sessions expire after 15 inactive minutes; the next protected request requires authentication."
+        },
+        {
+          "id": "NFUS1.AC6",
+          "text": "Permission changes take effect within five minutes, including existing sessions, and record administrator and timestamp."
+        }
+      ],
+      "source_section": "2"
+    },
+    {
+      "id": "NFUS2",
+      "title": "Preserve Personal and Sensitive Data Privacy",
+      "story": "AS A Prospective Adopter, I WANT to protect my personal and household information, SO THAT I apply without unnecessary privacy exposure.",
+      "criteria": [
+        {
+          "id": "NFUS2.AC1",
+          "text": "Use TLS 1.2 or later in transit and encrypted databases and backups; reject unencrypted protected-data requests."
+        },
+        {
+          "id": "NFUS2.AC2",
+          "text": "Public responses and exports exclude owner contacts, microchip numbers, applications, payment details and raw medical notes."
+        },
+        {
+          "id": "NFUS2.AC3",
+          "text": "Before application submission, display collection purpose and record privacy-notice version, acknowledgement and timestamp."
+        },
+        {
+          "id": "NFUS2.AC4",
+          "text": "Veterinarians access release contacts and care needs; household and referee evidence remains staff-restricted."
+        },
+        {
+          "id": "NFUS2.AC5",
+          "text": "Store payment reference and outcome only; never store card verification codes or full payment-card numbers."
+        },
+        {
+          "id": "NFUS2.AC6",
+          "text": "Apply a management-approved retention schedule; delete or irreversibly de-identify expired personal data within 30 days, logging completion."
+        }
+      ],
+      "source_section": "2"
+    },
+    {
+      "id": "NFUS3",
+      "title": "Maintain Responsive Performance",
+      "story": "AS A Shelter Staff Member, I WANT to receive prompt system responses, SO THAT I complete time-sensitive shelter work.",
+      "criteria": [
+        {
+          "id": "NFUS3.AC1",
+          "text": "Animal-search response time is at most two seconds at the 95th percentile with 50 active internal users."
+        },
+        {
+          "id": "NFUS3.AC2",
+          "text": "Public listings become usable within three seconds at the 95th percentile with 100 concurrent visitors."
+        },
+        {
+          "id": "NFUS3.AC3",
+          "text": "Valid intake, assessment and status updates confirm within two seconds at the 95th percentile."
+        },
+        {
+          "id": "NFUS3.AC4",
+          "text": "A valid 10 MB photograph uploads and confirms within five seconds at the 95th percentile."
+        },
+        {
+          "id": "NFUS3.AC5",
+          "text": "Valid application submission confirms within three seconds; retrying the same request returns the same applicationId."
+        },
+        {
+          "id": "NFUS3.AC6",
+          "text": "A 30-minute mixed-load test uses 50 internal users, 100 visitors and 10,000 animals; server errors remain below 1%."
+        }
+      ],
+      "source_section": "2"
+    },
+    {
+      "id": "NFUS4",
+      "title": "Sustain Availability and Recoverability",
+      "story": "AS A Shelter Staff Member, I WANT to retain dependable access and recovery, SO THAT I continue animal care after system failures.",
+      "criteria": [
+        {
+          "id": "NFUS4.AC1",
+          "text": "Achieve 99.5% monthly availability, measured by successful one-minute probes, excluding approved announced maintenance."
+        },
+        {
+          "id": "NFUS4.AC2",
+          "text": "Announce maintenance 48 hours ahead; schedule outside the proposed 08:00 to 18:00 shelter operating window."
+        },
+        {
+          "id": "NFUS4.AC3",
+          "text": "Three consecutive failed probes trigger an alert to support within five minutes of the first failure."
+        },
+        {
+          "id": "NFUS4.AC4",
+          "text": "Back up critical records every 15 minutes and take encrypted daily backups stored separately from production."
+        },
+        {
+          "id": "NFUS4.AC5",
+          "text": "Recovery loses at most 15 minutes of committed data and restores critical service within four hours."
+        },
+        {
+          "id": "NFUS4.AC6",
+          "text": "Quarterly restoration verifies identifiers, relationships and latest committed values across animal, medical, application, agreement and placement records."
+        }
+      ],
+      "source_section": "2"
+    },
+    {
+      "id": "NFUS5",
+      "title": "Support Usable and Error-Resistant Work",
+      "story": "AS A Shelter Staff Member, I WANT to use clear consistent workflows, SO THAT I avoid welfare and placement errors.",
+      "criteria": [
+        {
+          "id": "NFUS5.AC1",
+          "text": "After 60 minutes of training, each participant completes intake within five minutes without critical error."
+        },
+        {
+          "id": "NFUS5.AC2",
+          "text": "Required fields are identified before submission; validation identifies the field, problem and corrective action."
+        },
+        {
+          "id": "NFUS5.AC3",
+          "text": "Validation failures preserve all valid entries and attachments; users correct errors without re-entering unaffected information."
+        },
+        {
+          "id": "NFUS5.AC4",
+          "text": "Rejection, adoption finalisation and release require a confirmation showing animal, application, previous status and proposed outcome."
+        },
+        {
+          "id": "NFUS5.AC5",
+          "text": "Status labels match the domain model across forms, searches, dashboards and exports."
+        },
+        {
+          "id": "NFUS5.AC6",
+          "text": "Five representative staff perform four core tasks each; at least 18 of 20 succeed unaided, with zero unsafe releases."
+        }
+      ],
+      "source_section": "2"
+    },
+    {
+      "id": "NFUS6",
+      "title": "Preserve Record Integrity and Auditability",
+      "story": "AS A Shelter Staff Member, I WANT to retain consistent traceable records, SO THAT I trust welfare and placement decisions.",
+      "criteria": [
+        {
+          "id": "NFUS6.AC1",
+          "text": "Intake and adoption finalisation commit all required related records atomically; injected failure leaves no partial transaction."
+        },
+        {
+          "id": "NFUS6.AC2",
+          "text": "Unique constraints reject duplicate shelterId and applicationId; repeated finalisation returns the existing adoption record."
+        },
+        {
+          "id": "NFUS6.AC3",
+          "text": "Updates include record version; stale submissions are rejected with a conflict message and retain unsaved user changes."
+        },
+        {
+          "id": "NFUS6.AC4",
+          "text": "Critical changes log actor, UTC timestamp, record identifier, action and before-and-after values."
+        },
+        {
+          "id": "NFUS6.AC5",
+          "text": "Ordinary users cannot change or delete audit entries; retention follows the approved audit schedule."
+        },
+        {
+          "id": "NFUS6.AC6",
+          "text": "Daily checks report orphan records, invalid status transitions and released animals without passed checks within one hour; affected finalisation is blocked."
+        }
+      ],
+      "source_section": "2"
+    },
+    {
+      "id": "NFUS7",
+      "title": "Provide Accessible Public Services",
+      "story": "AS A Prospective Adopter, I WANT to use accessible public listings and forms, SO THAT I browse and apply independently.",
+      "criteria": [
+        {
+          "id": "NFUS7.AC1",
+          "text": "All public browse-and-apply pages satisfy WCAG 2.2 Level AA, checked manually and with automated tools (W3C, 2024)."
+        },
+        {
+          "id": "NFUS7.AC2",
+          "text": "Every interaction works by keyboard, with logical focus order, visible unobscured focus and no keyboard trap."
+        },
+        {
+          "id": "NFUS7.AC3",
+          "text": "Controls expose accessible names; screen readers announce required fields, validation errors and submission outcomes."
+        },
+        {
+          "id": "NFUS7.AC4",
+          "text": "Meaningful animal photographs have descriptive alternative text; decorative images are ignored by assistive technology."
+        },
+        {
+          "id": "NFUS7.AC5",
+          "text": "Text contrast meets 4.5:1, or 3:1 for large text; 200% zoom preserves all content and functions."
+        },
+        {
+          "id": "NFUS7.AC6",
+          "text": "Test current and previous Chrome, Edge and Safari releases, plus NVDA with Chrome and VoiceOver with Safari."
+        }
+      ],
+      "source_section": "2"
+    }
+  ]
+}

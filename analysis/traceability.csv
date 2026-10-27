@@ -1,0 +1,8 @@
+story_id,model_coverage,principal_classes,acceptance_gate,criterion_range
+FUS1,UC; AD1; SD1; CL,IntakeRecord; Animal,Complete intake and unique shelterId,FUS1.AC1-FUS1.AC6
+FUS2,AD1; SD1; SM; CL,MedicalRecord; Veterinarian,Explicit urgency; treatment resolution,FUS2.AC3-FUS2.AC6
+FUS3,AD1; SD1; SM; CL,IntakeRecord; BehaviourAssessment,All assessments complete; ownership clear; behaviour suitable,FUS3.AC2-FUS3.AC6
+FUS4,AD1; SD1; SM; CL,MedicalRecord; Animal,Vaccination and desexing policy met; authorised clearance,FUS4.AC1-FUS4.AC6
+FUS5,AD2; SD2; CL,AdoptionApplication; ProspectiveAdopter,Three satisfactory suitability checks,FUS5.AC3-FUS5.AC6
+FUS6,AD2; SD2; SM; CL,AdoptionApplication; AdoptionAgreement; AdoptionRecord,Compatible meeting; signed agreement; confirmed payment,FUS6.AC2-FUS6.AC6
+FUS7,AD2; SD2; SM; CL,Veterinarian; AdoptionRecord,Latest medical check passed before release; follow-up scheduled,FUS7.AC1-FUS7.AC6

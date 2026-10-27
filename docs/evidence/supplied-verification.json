@@ -1,0 +1,538 @@
+{
+  "checks": [
+    {
+      "check": "t_object persisted identifiers",
+      "status": "PASS",
+      "detail": 238
+    },
+    {
+      "check": "t_object content readback excluding default creation dates",
+      "status": "PASS",
+      "detail": 238
+    },
+    {
+      "check": "t_connector persisted identifiers",
+      "status": "PASS",
+      "detail": 265
+    },
+    {
+      "check": "t_connector content readback excluding default creation dates",
+      "status": "PASS",
+      "detail": 265
+    },
+    {
+      "check": "t_attribute persisted identifiers",
+      "status": "PASS",
+      "detail": 89
+    },
+    {
+      "check": "t_attribute content readback excluding default creation dates",
+      "status": "PASS",
+      "detail": 89
+    },
+    {
+      "check": "t_operation persisted identifiers",
+      "status": "PASS",
+      "detail": 81
+    },
+    {
+      "check": "t_operation content readback excluding default creation dates",
+      "status": "PASS",
+      "detail": 81
+    },
+    {
+      "check": "t_diagram persisted identifiers",
+      "status": "PASS",
+      "detail": 7
+    },
+    {
+      "check": "t_diagram content readback excluding default creation dates",
+      "status": "PASS",
+      "detail": 7
+    },
+    {
+      "check": "t_diagramobjects persisted placements",
+      "status": "PASS",
+      "detail": 204
+    },
+    {
+      "check": "t_diagramobjects geometry readback",
+      "status": "PASS",
+      "detail": 204
+    },
+    {
+      "check": "t_diagramlinks persisted placements",
+      "status": "PASS",
+      "detail": 263
+    },
+    {
+      "check": "t_diagramlinks geometry readback",
+      "status": "PASS",
+      "detail": 263
+    },
+    {
+      "check": "No orphan diagram placements",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "No orphan diagram links",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "connector endpoints",
+      "status": "PASS",
+      "detail": 265
+    },
+    {
+      "check": "AD10 action degrees",
+      "status": "PASS",
+      "detail": 30
+    },
+    {
+      "check": "AD10 concise names",
+      "status": "PASS",
+      "detail": 30
+    },
+    {
+      "check": "AD10 no Activity nodes",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "AD10 decision guards",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "AD10 paths reach an end",
+      "status": "PASS",
+      "detail": 4
+    },
+    {
+      "check": "AD10 one initial",
+      "status": "PASS",
+      "detail": [
+        354
+      ]
+    },
+    {
+      "check": "AD18 action degrees",
+      "status": "PASS",
+      "detail": 30
+    },
+    {
+      "check": "AD18 concise names",
+      "status": "PASS",
+      "detail": 30
+    },
+    {
+      "check": "AD18 no Activity nodes",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "AD18 decision guards",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "AD18 paths reach an end",
+      "status": "PASS",
+      "detail": 1
+    },
+    {
+      "check": "AD18 one initial",
+      "status": "PASS",
+      "detail": [
+        537
+      ]
+    },
+    {
+      "check": "SD12 lifelines",
+      "status": "PASS",
+      "detail": 32
+    },
+    {
+      "check": "SD12 replies are data",
+      "status": "PASS",
+      "detail": 10
+    },
+    {
+      "check": "SD12 self message",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "SD12 labelled fragments",
+      "status": "PASS",
+      "detail": 11
+    },
+    {
+      "check": "fragment 663 operands",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "fragment 664 operands",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "fragment 665 operands",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "fragment 666 operands",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "fragment 667 operands",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "fragment 668 operands",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "fragment 669 operands",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "fragment 670 operands",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "fragment 671 operands",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "fragment 672 operands",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "fragment 673 operands",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "SD19 lifelines",
+      "status": "PASS",
+      "detail": 42
+    },
+    {
+      "check": "SD19 replies are data",
+      "status": "PASS",
+      "detail": 12
+    },
+    {
+      "check": "SD19 self message",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "SD19 labelled fragments",
+      "status": "PASS",
+      "detail": 6
+    },
+    {
+      "check": "fragment 674 operands",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "fragment 675 operands",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "fragment 676 operands",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "fragment 677 operands",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "fragment 678 operands",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "fragment 679 operands",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "Use case count",
+      "status": "PASS",
+      "detail": 28
+    },
+    {
+      "check": "Include count",
+      "status": "PASS",
+      "detail": 10
+    },
+    {
+      "check": "Extend count",
+      "status": "PASS",
+      "detail": 7
+    },
+    {
+      "check": "Constraint elements",
+      "status": "PASS",
+      "detail": 7
+    },
+    {
+      "check": "Eleven persistent states",
+      "status": "PASS",
+      "detail": 11
+    },
+    {
+      "check": "State choices removed",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "Eleven domain classes",
+      "status": "PASS",
+      "detail": 11
+    },
+    {
+      "check": "AdoptionAgreement attributes",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "AdoptionAgreement operations",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "AdoptionApplication attributes",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "AdoptionApplication operations",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "AdoptionRecord attributes",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "AdoptionRecord operations",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "Animal attributes",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "Animal operations",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "BehaviourAssessment attributes",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "BehaviourAssessment operations",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "IntakeRecord attributes",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "IntakeRecord operations",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "MedicalRecord attributes",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "MedicalRecord operations",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "ProspectiveAdopter attributes",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "ProspectiveAdopter operations",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "ShelterPersonnel attributes",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "ShelterPersonnel operations",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "ShelterStaffMember attributes",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "ShelterStaffMember operations",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "Veterinarian attributes",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "Veterinarian operations",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "AD10 horizontal fork and join bars",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "AD18 horizontal fork and join bars",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "SD12 native reply bracket suppression",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "SD12 native fragment operators",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "SD19 native reply bracket suppression",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "SD19 native fragment operators",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "FUS1 six criteria",
+      "status": "PASS",
+      "detail": 6
+    },
+    {
+      "check": "FUS2 six criteria",
+      "status": "PASS",
+      "detail": 6
+    },
+    {
+      "check": "FUS3 six criteria",
+      "status": "PASS",
+      "detail": 6
+    },
+    {
+      "check": "FUS4 six criteria",
+      "status": "PASS",
+      "detail": 6
+    },
+    {
+      "check": "FUS5 six criteria",
+      "status": "PASS",
+      "detail": 6
+    },
+    {
+      "check": "FUS6 six criteria",
+      "status": "PASS",
+      "detail": 6
+    },
+    {
+      "check": "FUS7 six criteria",
+      "status": "PASS",
+      "detail": 6
+    },
+    {
+      "check": "NFUS1 six criteria",
+      "status": "PASS",
+      "detail": 6
+    },
+    {
+      "check": "NFUS2 six criteria",
+      "status": "PASS",
+      "detail": 6
+    },
+    {
+      "check": "NFUS3 six criteria",
+      "status": "PASS",
+      "detail": 6
+    },
+    {
+      "check": "NFUS4 six criteria",
+      "status": "PASS",
+      "detail": 6
+    },
+    {
+      "check": "NFUS5 six criteria",
+      "status": "PASS",
+      "detail": 6
+    },
+    {
+      "check": "NFUS6 six criteria",
+      "status": "PASS",
+      "detail": 6
+    },
+    {
+      "check": "NFUS7 six criteria",
+      "status": "PASS",
+      "detail": 6
+    }
+  ],
+  "summary": "103 static checks passed",
+  "validation_boundary": {
+    "database_schemas": "PASS - 98 table schemas checked on candidate 9",
+    "index_traversals": "PASS - 244 complete index traversals and 2552 readable rows on candidate 9",
+    "native_EA_open": "PASS - final candidate 9 opened in UQ EA Academic on 27 Oct 2026 23:58 Brisbane",
+    "EA_native_PNG_export": "PASS - seven real PNG and seven EMF exports; round9 completed 28 Oct 2026 00:00:18 Brisbane",
+    "EA_Project_Integrity": "PASS - final candidate 9, Report Only, six checks selected and UML 2.0 Migration excluded; Checks Complete / No problems found observed 28 Oct 2026 about 00:01 Brisbane; screenshot retained",
+    "EA_UML_validation": "PASS - PawPath root selected; EA native Model Validation completed with 0 errors and 0 warnings on a UQ-local validation copy. Copy snapshot SHA-256 matches final delivery model c1b168b4f2c3601d5f3b41263e480305b543a1da9f4735d330b93ad00d432310. Completion observed 28 Oct 2026 about 00:10 Brisbane; screenshot retained. Scope: EA enabled built-in rules, not a grading guarantee. Configuration inspected: all 12 listed validation groups enabled; EA_UML_Enabled_Rules.png retained.",
+    "report_figures": "PASS - final report uses round9 native PNG exports and enlarged reading panels; 25 pages rendered. Only pages12-13 differ from prior visually checked rendering; both rechecked.",
+    "model_sha256": "c1b168b4f2c3601d5f3b41263e480305b543a1da9f4735d330b93ad00d432310",
+    "summary": "\u6700\u7d42\u526f\u672c\u5df2\u5728 UQ EA \u958b\u555f\u4e26\u532f\u51fa\u4e03\u5f35 PNG\u3002Report Only \u516d\u9805\u6aa2\u67e5\u5b8c\u6210\uff0c\u986f\u793a No problems found\u3002UML validation \u5728\u8207\u4ea4\u4ed8\u6a21\u578b\u6821\u9a57\u503c\u5b8c\u5168\u76f8\u540c\u7684 UQ \u66ab\u5b58\u526f\u672c\u4e0a\u5b8c\u6210\uff0c\u7d50\u679c\u70ba 0 errors\u30010 warnings\uff1b\u8b49\u64da\u53ca\u526f\u672c\u4f86\u6e90\u5c0d\u7167\u4fdd\u5b58\u5728 validation \u8cc7\u6599\u593e\u3002",
+    "final_export_round": "round9",
+    "last_completed_export_round": "round9",
+    "checked_at_utc": "2026-10-27T14:12:07.390473+00:00"
+  }
+}

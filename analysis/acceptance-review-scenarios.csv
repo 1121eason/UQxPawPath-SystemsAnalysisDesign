@@ -1,0 +1,11 @@
+scenario_id,criteria,precondition,action,expected_result,execution_status
+S01,FUS3.AC3; FUS4.AC4,Health and behaviour pass; ownership hold remains active,Publication attempt,Listing remains blocked,not_executed_design_review_only
+S02,FUS2.AC3; FUS2.AC6,Urgent treatment flag remains true,Non-veterinarian attempts to clear it,Authorisation denied; flag retained,not_executed_design_review_only
+S03,FUS5.AC2,Application is missing required information,Application submitted,Request correction before suitability review,not_executed_design_review_only
+S04,FUS5.AC6,One suitability check is unsatisfactory,Application decision recorded,Reason and notification recorded; availability restored,not_executed_design_review_only
+S05,FUS6.AC3,Meet-and-greet is incompatible,Meeting outcome recorded,Application closes; animal becomes available,not_executed_design_review_only
+S06,FUS6.AC5,Agreement signed; payment pending,Finalisation requested,No adoption finalisation,not_executed_design_review_only
+S07,FUS6.AC6; NFUS6.AC2,Adoption already finalised,Same finalisation requested again,Existing AdoptionRecord returned; no duplicate,not_executed_design_review_only
+S08,FUS7.AC3; FUS7.AC4,Earlier medical clearance passed; latest check failed,Release requested,Release Paused; no physical handover,not_executed_design_review_only
+S09,NFUS1.AC2; NFUS2.AC2,User has public or other-applicant context,Protected data requested,No owner or other-applicant data returned,not_executed_design_review_only
+S10,NFUS6.AC3,Another user has committed a newer version,Stale update submitted,Conflict reported; unsaved user changes retained,not_executed_design_review_only
