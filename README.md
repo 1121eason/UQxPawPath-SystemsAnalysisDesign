@@ -6,13 +6,25 @@ How can an animal shelter coordinate intake, welfare assessments and adoption wi
 
 PawPath translates that business problem into **14 user stories, 84 acceptance criteria and seven connected UML diagrams**. The design follows an animal from arrival through medical clearance, application assessment, adoption and physical release, with explicit responsibilities, decision conditions and exception paths.
 
-**[Business case](docs/business-case.md) · [Requirements](docs/requirements.md) · [UML gallery](docs/model-gallery.md) · [Design decisions](docs/design-decisions.md) · [繁體中文](README.zh-TW.md)**
+**[Case study & outcomes](docs/case-study.md) · [Business scope](docs/business-case.md) · [Requirements](docs/requirements.md) · [UML gallery](docs/model-gallery.md) · [繁體中文](README.zh-TW.md)**
 
 ![PawPath design overview: intake, eligibility, adoption and safe release](assets/design-overview.svg)
 
 **Context:** academic design case for BISM7255 at The University of Queensland. This portfolio presents the revised analysis and design package dated 27–28 October 2026. It demonstrates specification and modelling work; PawPath implementation, operational improvements and user acceptance results are outside this repository's evidence.
 
-## What this project demonstrates
+## Completed analysis and design
+
+| Deliverable | Result | Project evidence |
+| --- | --- | --- |
+| Requirements specification | Seven functional and seven non-functional user stories, each with six acceptance criteria: **84 criteria** in total | [Requirements catalogue](docs/requirements.md), [criterion dataset](analysis/acceptance-criteria.csv) |
+| Process and interaction models | Two end-to-end workflows represented through **two activity and two sequence diagrams**, including parallel work, decisions and recovery paths | [UML gallery](docs/model-gallery.md) |
+| Domain and lifecycle models | **11 domain classes and 11 persistent Animal states** connect stored information to permitted business transitions | [Class and state models](docs/model-gallery.md) |
+| Integrated design package | **Seven UML diagrams** covering system scope, business processes, interactions, lifecycle and domain structure; functional stories mapped to their principal models | [Requirement traceability](docs/traceability.md) |
+| Model validation records | Completed EA integrity check with no problems found; recorded UML validation with **0 errors and 0 warnings** on a matching model copy | [Validation evidence and scope](docs/evidence/README.md) |
+
+The resulting specification makes listing eligibility, adoption finalisation and physical release separate, reviewable decisions. The [case study](docs/case-study.md) explains the business problem, completed deliverables and design outcomes.
+
+## Technical methods and capabilities
 
 | Capability | How I applied it | Evidence |
 | --- | --- | --- |
@@ -64,8 +76,8 @@ python3 scripts/verify_portfolio.py
 
 This verifies file hashes, retained source evidence, requirement IDs and internal links. It does not execute PawPath or rerun Enterprise Architect validation.
 
-## Suggested interview route
+## Project documentation
 
-Start with the [business problem](docs/business-case.md), walk through the [listing and release decisions](docs/design-decisions.md), follow FUS7 across the [traceability table](docs/traceability.md), and finish with the [model review evidence](docs/evidence/README.md). A [five-minute walkthrough](docs/interview-walkthrough.md) connects each artefact to the analysis skill it demonstrates.
+The [case study and design outcomes](docs/case-study.md) present the completed analysis in context. Supporting documents provide the [business scope](docs/business-case.md), [design rationale](docs/design-decisions.md), [requirement-to-model traceability](docs/traceability.md) and [validation evidence](docs/evidence/README.md).
 
 **Portfolio owner:** Yi-Cheng Lee (Eason) · University of Queensland academic project. Original editable files, full reports and the assignment brief are retained in an owner-only private archive. Student identifiers and course teaching materials are excluded from this public repository. [Attribution and usage](NOTICE.md).

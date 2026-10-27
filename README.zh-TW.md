@@ -6,11 +6,23 @@
 
 PawPath 將這個業務問題整理為 **14 則使用者故事、84 項驗收條件與七張相互對照的 UML 圖**，涵蓋入所、醫療放行、申請審查、完成領養、實際離所及後續追蹤。
 
-**[English](README.md) · [業務分析](docs/business-case.md) · [完整需求](docs/requirements.md) · [圖表導覽](docs/model-gallery.md) · [設計決策](docs/design-decisions.md)**
+**[English](README.md) · [個案與設計成果](docs/case-study.md) · [業務分析](docs/business-case.md) · [完整需求](docs/requirements.md) · [圖表導覽](docs/model-gallery.md)**
 
 ![PawPath 從入所到安全交付的設計概覽](assets/design-overview.svg)
 
-## 我在這個專案展現的能力
+## 完成的分析與設計成果
+
+| 作業成果 | 具體結果 | 成果證據 |
+| --- | --- | --- |
+| 需求規格 | 7 則功能與 7 則非功能使用者故事，每則 6 項驗收條件，共 **84 項 AC** | [需求目錄](docs/requirements.md)、[驗收條件資料集](analysis/acceptance-criteria.csv) |
+| 流程與互動設計 | 以 **2 張 Activity Diagram 與 2 張 Sequence Diagram** 呈現兩條端到端流程，涵蓋並行作業、決策、例外與恢復路徑 | [UML 圖表](docs/model-gallery.md) |
+| 領域與生命週期設計 | **11 個領域類別、11 個 Animal 持續狀態**，把資料需求連結到允許的業務狀態轉換 | [Class 與 State Machine](docs/model-gallery.md) |
+| 整合設計文件 | 完成 **7 張 UML 圖**，涵蓋系統範圍、流程、互動、生命週期與資料結構，並建立功能需求到主要模型的追蹤 | [需求追蹤](docs/traceability.md) |
+| 模型驗證紀錄 | EA 完整性檢查顯示 No problems found；相符模型副本的 UML 檢查記錄為 **0 errors、0 warnings** | [驗證結果與範圍](docs/evidence/README.md) |
+
+這份設計將「公開上架資格」、「完成領養」及「實際離所」拆成可檢查的業務決策，並把前置條件、資料欄位與失敗處理寫入需求及模型。[個案與設計成果](docs/case-study.md)進一步說明這些成果如何回應收容所的業務問題。
+
+## 分析方法、能力與技術
 
 | 能力 | 實際應用 | 可查閱成果 |
 | --- | --- | --- |
@@ -38,4 +50,4 @@ PawPath 將這個業務問題整理為 **14 則使用者故事、84 項驗收條
 
 效能、可用性及復原數值均為待確認的設計目標。可用 `python3 scripts/verify_portfolio.py` 重查公開檔案完整性與需求索引；此檢查不會重新執行 EA。
 
-**專案背景：** UQ BISM7255 學術案例，修訂資料日期為 2026 年 10 月 27–28 日。公開庫提供能力展示、需求及圖表；完整報告、可編輯 EA 模型與作業題目保存在私人封存庫。[五分鐘面試導覽](docs/interview-walkthrough.md) · [來源與使用說明](NOTICE.md)。
+**專案背景：** UQ BISM7255 學術案例，修訂資料日期為 2026 年 10 月 27–28 日。公開庫提供個案分析、設計成果、需求及圖表；完整報告、可編輯 EA 模型與作業題目保存在私人封存庫。[個案與設計成果](docs/case-study.md) · [來源與使用說明](NOTICE.md)。
