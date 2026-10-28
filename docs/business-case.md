@@ -1,6 +1,6 @@
 # Business case and system scope
 
-[Back to portfolio](../README.md)
+[Project overview](../README.md)
 
 ## Business question
 

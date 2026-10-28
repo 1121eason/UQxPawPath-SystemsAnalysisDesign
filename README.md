@@ -24,9 +24,9 @@ PawPath translates that business problem into **14 user stories, 84 acceptance c
 
 The resulting specification makes listing eligibility, adoption finalisation and physical release separate, reviewable decisions. The [case study](docs/case-study.md) explains the business problem, completed deliverables and design outcomes.
 
-## Technical methods and capabilities
+## Analysis methods and technical evidence
 
-| Capability | How I applied it | Evidence |
+| Method | Application in the completed design | Evidence |
 | --- | --- | --- |
 | Business requirements analysis | Turned a narrative case into role-based goals, required information, prerequisites, failure handling and measurable acceptance conditions | [7 functional + 7 non-functional stories](docs/requirements.md), [84 criteria in CSV](analysis/acceptance-criteria.csv) |
 | Stakeholder and system-boundary analysis | Distinguished shelter staff, veterinarians, council officers, adopters and an external registry; separated physical work from recorded system outcomes | [Business scope and responsibilities](docs/business-case.md), [use case diagram](assets/diagrams/UC_full.png) |
@@ -44,9 +44,9 @@ The resulting specification makes listing eligibility, adoption finalisation and
 
 **Requirements describe failure and recovery as well as success.** Incomplete applications return for correction, unsuccessful matches restore availability, and repeated finalisation requests must return the existing placement. These rules connect acceptance criteria to process, state and data responsibilities.
 
-[Read the design rationale and trade-offs →](docs/design-decisions.md)
+[Design rationale and trade-offs](docs/design-decisions.md)
 
-## Explore the models
+## UML model results
 
 | View | Question answered | Supplied model evidence |
 | --- | --- | --- |
@@ -60,7 +60,7 @@ The [gallery](docs/model-gallery.md) contains seven complete Enterprise Architec
 
 ## My responsibility
 
-I was responsible for the **requirements analysis, user stories and acceptance criteria, UML modelling, system design decisions and report preparation** for PawPath. The original coursework report carries a two-student byline; the responsibility statement reflects my account of the work. The revised package and portfolio preparation used substantive ChatGPT/Codex assistance, disclosed in [contribution and provenance](docs/my-contribution.md).
+I was responsible for the **requirements analysis, user stories and acceptance criteria, UML modelling, system design decisions and report preparation** for PawPath. The original coursework report retains its two-student byline. Individual responsibilities and substantive ChatGPT/Codex assistance with the revised package are documented in the [contribution and authorship record](docs/my-contribution.md).
 
 ## Evidence and reproducibility
 

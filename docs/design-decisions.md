@@ -1,6 +1,6 @@
 # Design decisions and trade-offs
 
-[Back to portfolio](../README.md) · [Requirements](requirements.md) · [Model gallery](model-gallery.md)
+[Project overview](../README.md) · [Requirements](requirements.md) · [Model gallery](model-gallery.md)
 
 ## 1. Separate assessment completion from eligibility
 
@@ -50,6 +50,6 @@ The non-functional stories state actors, timing, workload, percentile response t
 
 **Trade-off:** measurable targets support supplier and acceptance discussions, but require business agreement and representative tests. They are proposed requirements, with no performance or compliance result claimed.
 
-## Review questions before implementation
+## Further design considerations
 
 The native tool results establish a bounded technical check. Manual review should still examine crowded class multiplicity labels, connector routing, actor-to-role alignment and consistency between the 11-state lifecycle and concurrent application handling. The supplied `.eapx` is preserved in the private archive; public diagram exports have not been silently repaired.

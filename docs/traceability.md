@@ -1,8 +1,8 @@
 # Requirement-to-model traceability
 
-[Back to portfolio](../README.md) · [Complete requirements](requirements.md)
+[Project overview](../README.md) · [Complete requirements](requirements.md)
 
-The functional mapping below follows Appendix A of the revised report, with principal class names added as a portfolio reading aid. It identifies intended coverage; it is not a formal proof that every model completely satisfies every criterion.
+The functional mapping combines the model coverage in Appendix A of the revised report with the principal supporting domain classes. It identifies intended coverage; it is not a formal proof that every model completely satisfies every criterion.
 
 | Story | Principal model coverage | Principal classes | Acceptance gate |
 | --- | --- | --- | --- |
@@ -14,16 +14,16 @@ The functional mapping below follows Appendix A of the revised report, with prin
 | FUS6 | AD2; SD2; SM; CL | AdoptionApplication; AdoptionAgreement; AdoptionRecord | Compatible meeting; signed agreement; confirmed payment |
 | FUS7 | AD2; SD2; SM; CL | Veterinarian; AdoptionRecord | Latest medical check passed before release; follow-up scheduled |
 
-[Download traceability CSV](../analysis/traceability.csv).
+[Traceability dataset (CSV)](../analysis/traceability.csv).
 
-## Worked example: FUS7, final medical release
+## FUS7: final medical release traceability
 
 1. **Requirement:** FUS7.AC4 blocks release until the latest check passes, even when payment or an earlier clearance is valid.
 2. **Activity:** AD2 routes a failed final check through treatment and reassessment before physical release.
 3. **Sequence:** SD2 records the check result, pauses release and repeats treatment/recheck interactions.
 4. **State:** Adopted can move into Release Paused; passing a recheck permits resumption before release confirmation.
 5. **Data:** AdoptionRecord includes `latestMedicalCheckPassed`, `releaseStatus`, `releasedAt`, `followUpMethod` and `followUpDueAt`.
-6. **Future acceptance scenario:** make the latest result fail after an earlier pass, then attempt release. The expected result is a block. This scenario is specified, not executed in this repository.
+6. **Specified acceptance scenario:** a release request follows an earlier passed check and a latest failed check. The expected result is a block. This scenario is specified, not executed in this repository.
 
 ## Non-functional coverage
 

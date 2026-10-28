@@ -6,7 +6,7 @@
 
 PawPath 將這個業務問題整理為 **14 則使用者故事、84 項驗收條件與七張相互對照的 UML 圖**，涵蓋入所、醫療放行、申請審查、完成領養、實際離所及後續追蹤。
 
-**[English](README.md) · [個案與設計成果](docs/case-study.md) · [業務分析](docs/business-case.md) · [完整需求](docs/requirements.md) · [圖表導覽](docs/model-gallery.md)**
+**[English](README.md) · [個案與設計成果](docs/case-study.md) · [業務分析](docs/business-case.md) · [完整需求](docs/requirements.md) · [UML 模型成果](docs/model-gallery.md)**
 
 ![PawPath 從入所到安全交付的設計概覽](assets/design-overview.svg)
 
@@ -22,9 +22,9 @@ PawPath 將這個業務問題整理為 **14 則使用者故事、84 項驗收條
 
 這份設計將「公開上架資格」、「完成領養」及「實際離所」拆成可檢查的業務決策，並把前置條件、資料欄位與失敗處理寫入需求及模型。[個案與設計成果](docs/case-study.md)進一步說明這些成果如何回應收容所的業務問題。
 
-## 分析方法、能力與技術
+## 分析方法與技術證據
 
-| 能力 | 實際應用 | 可查閱成果 |
+| 分析方法 | 在完成設計中的應用 | 成果證據 |
 | --- | --- | --- |
 | 業務需求分析 | 把案例敘述轉成角色、目標、必填資料、前置條件、例外處理與驗收規則 | 7 則功能、7 則非功能故事；[84 項 AC](analysis/acceptance-criteria.csv) |
 | 利害關係人與系統範圍分析 | 區分收容所人員、獸醫、地方政府人員、領養者及外部登記系統的責任 | [業務範圍與 Use Case](docs/business-case.md) |
@@ -44,7 +44,7 @@ PawPath 將這個業務問題整理為 **14 則使用者故事、84 項驗收條
 
 ## 我的責任與證據範圍
 
-我負責本專案的需求分析、使用者故事、驗收條件、UML 建模、系統設計決策與報告製作。原始課程報告保留雙人署名；個人責任敘述依我的工作說明呈現。修訂版及作品集整理使用 ChatGPT／Codex 輔助，實際範圍記錄於[貢獻聲明](docs/my-contribution.md)。
+我負責本專案的需求分析、使用者故事、驗收條件、UML 建模、系統設計決策與報告製作。原始課程報告保留雙人署名；個人工作範圍及修訂版使用 ChatGPT／Codex 輔助的情形，記錄於[貢獻與作者說明](docs/my-contribution.md)。
 
 本庫提供七張 EA 原生完整圖及 12 張放大閱讀圖。提供的驗證紀錄顯示：Report Only 檢查為 **No problems found**；與交付模型記錄雜湊相符的驗證副本，UML 檢查為 **0 errors、0 warnings**。這些工具結果有其範圍；不能延伸為已實作、已通過使用者驗收、取得特定成績或已改善營運成效。
 

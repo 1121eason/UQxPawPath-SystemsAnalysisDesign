@@ -2,7 +2,7 @@
 <title id="title">PawPath: from business rules to a controlled animal lifecycle</title><desc id="desc">Intake leads to assessments, public listing, adoption finalisation and physical release. Listing requires eligibility. Adoption requires agreement and payment. Release requires the latest health check.</desc>
 <rect width="1160" height="350" rx="18" fill="#102b39"/>
 <g font-family="Arial, sans-serif"><text x="36" y="48" fill="#7ee2c1" font-size="16" letter-spacing="2">BUSINESS INFORMATION SYSTEMS ANALYSIS &amp; DESIGN</text>
-<text x="36" y="91" fill="white" font-size="31" font-weight="700">Make each business decision explicit.</text>
+<text x="36" y="91" fill="white" font-size="31" font-weight="700">PawPath | Requirements and UML Design Outcomes</text>
 <text x="36" y="123" fill="#c1d4df" font-size="17">14 user stories · 84 acceptance criteria · 7 UML diagrams · Enterprise Architect</text>
 <g fill="#204758" stroke="#598193"><rect x="36" y="161" width="192" height="91" rx="9"/><rect x="260" y="161" width="192" height="91" rx="9"/><rect x="484" y="161" width="192" height="91" rx="9"/><rect x="708" y="161" width="192" height="91" rx="9"/><rect x="932" y="161" width="192" height="91" rx="9"/></g>
 <g fill="white" font-size="19" font-weight="700"><text x="54" y="194">Intake</text><text x="278" y="194">Assess</text><text x="502" y="194">List</text><text x="726" y="194">Adopt</text><text x="950" y="194">Release</text></g>

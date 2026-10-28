@@ -1,6 +1,6 @@
 # Evidence, provenance and limitations
 
-[Back to portfolio](../../README.md)
+[Project overview](../../README.md)
 
 ## Current publication checks
 
@@ -25,14 +25,14 @@ The static record additionally reports 98 table schemas, 244 index traversals an
 
 The export log contains an earlier 23:56 start. The source validation README explains that the successful export round began at 23:58:32 after EA licensing loaded. The shared-folder UML attempt was cancelled; it is not used as pass evidence. Validation completed on a UQ-local copy instead.
 
-## What remains unproven
+## Validation scope and limitations
 
 - Complete business-case semantics, visual layout quality and conformity to every teaching convention.
 - Stakeholder agreement with assumptions, legal hold policy or proposed quality thresholds.
 - Software implementation, integration, access-control enforcement, load tests, restoration, accessibility conformance and user acceptance.
 - Operational savings, animal-welfare outcomes, a particular assessment grade or submission readiness.
 
-The source contains crowded class multiplicity labels and dense connectors. These remain visible in the unmodified diagrams. Reopening the private native model and reviewing endpoints is appropriate before implementation or resubmission.
+The source contains crowded class multiplicity labels and dense connectors. These remain visible in the unmodified diagrams. Detailed review of the corresponding native model endpoints remains an implementation and academic-validation consideration.
 
 ## Source handling
 

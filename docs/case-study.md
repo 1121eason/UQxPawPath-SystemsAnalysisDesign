@@ -31,7 +31,7 @@ Together, these artefacts form a requirements and UML design package with **14 s
 
 Health, ownership and behavioural assessments can proceed independently. Their completion must be synchronised before combined review, while each outcome still determines eligibility. The design therefore joins the assessment branches, then retains treatment, ownership-hold and behavioural conditions as explicit barriers to public listing.
 
-This rule appears in FUS2–FUS4, the intake activity and sequence diagrams, the Animal lifecycle and the supporting domain fields. It demonstrates process analysis that considers both workflow coordination and the meaning of the resulting information.
+This rule appears in FUS2–FUS4, the intake activity and sequence diagrams, the Animal lifecycle and the supporting domain fields. It links assessment completion, eligibility conditions and stored evidence across the requirements and models.
 
 ### Adoption finalisation and physical release
 
@@ -61,13 +61,13 @@ The placement design follows a defined sequence of business events:
 4. A failed latest health check pauses release and requires treatment and reassessment.
 5. A passed check permits release confirmation and follow-up scheduling.
 
-The state machine below presents the lifecycle outcome, including recovery and terminal paths. The same release rule can be traced from FUS7 acceptance criteria to process actions, messages and stored information in the [requirement-to-model example](traceability.md#worked-example-fus7-final-medical-release).
+The state machine below presents the lifecycle outcome, including recovery and terminal paths. The same release rule is mapped from FUS7 acceptance criteria to process actions, messages and stored information in the [release-control traceability record](traceability.md#fus7-final-medical-release-traceability).
 
 ![Animal lifecycle showing adoption, paused release and physical release](../assets/diagrams/SM_full.png)
 
-## Professional capabilities demonstrated
+## Analysis methods and technical evidence
 
-| Capability and method | Application in the completed work | Technical evidence |
+| Analysis method | Application in the completed work | Technical evidence |
 | --- | --- | --- |
 | Business requirements analysis | Converted the case into role-based goals, required information, prerequisites and specific acceptance conditions | 14 user stories; 84 identified criteria |
 | Stakeholder and scope analysis | Distinguished human responsibilities, system behaviour and the read-only external registry interaction | Actors, system boundary and responsibility lanes |

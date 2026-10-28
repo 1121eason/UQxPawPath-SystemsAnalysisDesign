@@ -1,10 +1,10 @@
 # Personal contribution and authorship
 
-[Back to portfolio](../README.md)
+[Project overview](../README.md)
 
 ## My responsibility
 
-I, **Yi-Cheng Lee (Eason)**, was responsible for the PawPath requirements analysis, functional and non-functional user stories, acceptance criteria, UML modelling, system design decisions and report preparation. This responsibility statement is based on my confirmation when preparing this portfolio on 28 October 2026.
+I, **Yi-Cheng Lee (Eason)**, was responsible for the PawPath requirements analysis, functional and non-functional user stories, acceptance criteria, UML modelling, system design decisions and report preparation.
 
 | Work area | Evidence in this portfolio |
 | --- | --- |
@@ -14,14 +14,14 @@ I, **Yi-Cheng Lee (Eason)**, was responsible for the PawPath requirements analys
 | Design review | Explicit urgency, eligibility, adoption, release and failure-handling decisions |
 | Documentation | Requirements catalogue, model explanations, assumptions and traceability derived from the report |
 
-The original academic report names **Yi-Cong Zhu and Yi-Cheng Lee**. That historical byline is preserved in the unchanged private source archive. It identifies the coursework submission context; it does not establish how work was divided. The personal responsibility statement above records my account and does not claim independent verification of contribution allocation.
+The original academic report names **Yi-Cong Zhu and Yi-Cheng Lee**. Its historical byline is preserved in the unchanged private source archive. This page records my individual responsibilities within that coursework context.
 
 ## AI assistance and revision history
 
 The revised report explicitly discloses ChatGPT and Codex assistance with English expression, making criteria specific, checking cross-model consistency, modifying Enterprise Architect element and connector data, improving figure readability and formatting, and preparing a separate revised model copy. This was substantive assistance. The portfolio documentation, requirement extraction and file-verification tooling were also prepared with AI assistance.
 
-The repository presents a revised learning artefact and my ability to explain its requirements and design decisions. It does not claim that every revised element was authored manually, that the students have completed final academic approval, or that a particular grade was received. The supplied files are preserved without rewriting their history.
+The revised analysis and design package contains 14 user stories, 84 acceptance criteria, seven UML diagrams and requirement-to-model traceability. AI assistance forms part of the documented revision method. The supplied files retain their original history; no assessment grade or completed final academic approval is reported.
 
-## Scope of the capability claim
+## Scope of the completed work
 
-This work supports discussion of business information systems analysis and design: translating a case into testable requirements, coordinating UML views and reasoning about business controls. Stakeholder interviews, software implementation, deployed access controls, production performance and real shelter outcomes are outside the supplied evidence.
+The completed work comprises case analysis, requirements specification, UML modelling, domain and lifecycle design, and documented review of business controls. Stakeholder interviews, software implementation, deployed access controls, production performance and real shelter outcomes are outside the supplied evidence.

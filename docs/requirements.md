@@ -1,6 +1,6 @@
 # Requirements catalogue
 
-[Back to portfolio](../README.md)
+[Project overview](../README.md)
 
 The following story and criterion text is extracted from sections 1 and 2 of the supplied revised report. Wording is preserved; this public edition omits the cover, student identifiers and teaching materials. [Machine-readable JSON](../analysis/requirements.json) · [84-criterion CSV](../analysis/acceptance-criteria.csv).
 
